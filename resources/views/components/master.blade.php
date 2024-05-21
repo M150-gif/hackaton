@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.11.2/css/all.css" >
     <title>Document</title>
     <!-- {{ asset('assets/css/app.css') }} -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -65,7 +68,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-2">
                         <div class="logo-box">
-                            <a href="index.html" class="logo"><img src="{{ asset('imgs/Logo_ofppt.png') }}" alt="logo"></a>
+                            <a href="index.html" class="logo"><img src="{{ asset('imgs/Logo_ofppt.png') }}" alt="logo" style="width: 50px;height:50px"></a>
                             <div class="user-btn-action">
                                 <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2" data-toggle="tooltip" data-placement="top" title="Search">
                                     <i class="la la-search"></i>
@@ -313,7 +316,7 @@
                                     <li>
                                         <p class="shop-cart-btn d-flex align-items-center">
                                             <i class="la la-shopping-cart"></i>
-                                            <span class="product-count">2</span>
+                                            <span class="product-count" style="background-color:#048347">2</span>
                                         </p>
                                         <ul class="cart-dropdown-menu">
                                             <li class="media media-card">
@@ -342,14 +345,14 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <a href="shopping-cart.html" class="btn theme-btn w-100">Got to cart <i class="la la-arrow-right icon ml-1"></i></a>
+                                                <a href="shopping-cart.html" class="btn theme-btn w-100" style="background-color: #048347">Got to cart <i class="la la-arrow-right icon ml-1"></i></a>
                                             </li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div><!-- end shop-cart -->
                             <div class="nav-right-button">
-                                <a href="admission.html" class="btn theme-btn d-none d-lg-inline-block"><i class="la la-user-plus mr-1"></i> Admission</a>
+                                <a href="admission.html" class="btn theme-btn d-none d-lg-inline-block" style="background-color: #048347"><i class="la la-user-plus mr-1"></i> Admission</a>
                             </div><!-- end nav-right-button -->
                         </div><!-- end menu-wrapper -->
                     </div><!-- end col-lg-10 -->
@@ -603,7 +606,7 @@
             <div class="col-lg-3 responsive-column-half">
                 <div class="footer-item">
                     <h3 class="fs-20 font-weight-semi-bold">Company</h3>
-                    <span class="section-divider section--divider"></span>
+                    <span class="section-divider section--divider" style="background-color: #048347"></span>
                     <ul class="generic-list-item">
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Contact us</a></li>
@@ -617,7 +620,7 @@
             <div class="col-lg-3 responsive-column-half">
                 <div class="footer-item">
                     <h3 class="fs-20 font-weight-semi-bold">Courses</h3>
-                    <span class="section-divider section--divider"></span>
+                    <span class="section-divider section--divider" style="background-color: #048347"></span>
                     <ul class="generic-list-item">
                         <li><a href="#">Web Development</a></li>
                         <li><a href="#">Hacking</a></li>
@@ -631,7 +634,7 @@
             <div class="col-lg-3 responsive-column-half">
                 <div class="footer-item">
                     <h3 class="fs-20 font-weight-semi-bold">Download App</h3>
-                    <span class="section-divider section--divider"></span>
+                    <span class="section-divider section--divider" style="background-color: #048347"></span>
                     <div class="mobile-app">
                         <p class="pb-3 lh-24">Download our mobile app and learn on the go.</p>
                         <a href="#" class="d-block mb-2 hover-s"><img src="images/appstore.png" alt="App store" class="img-fluid"></a>
