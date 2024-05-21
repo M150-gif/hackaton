@@ -65,7 +65,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-2">
                         <div class="logo-box">
-                            <a href="index.html" class="logo"><img src="images/logo.png" alt="logo"></a>
+                            <a href="index.html" class="logo"><img src="{{ asset('imgs/Logo_ofppt.png') }}" alt="logo"></a>
                             <div class="user-btn-action">
                                 <div class="search-menu-toggle icon-element icon-element-sm shadow-sm mr-2" data-toggle="tooltip" data-placement="top" title="Search">
                                     <i class="la la-search"></i>
@@ -84,7 +84,7 @@
                             <div class="menu-category">
                                 <ul>
                                     <li>
-                                        <a href="#">Categories <i class="la la-angle-down fs-12"></i></a>
+                                        <a href="#">domaines <i class="la la-angle-down fs-12"></i></a>
                                         <ul class="cat-dropdown-menu">
                                             <li>
                                                 <a href="course-grid.html">Development <i class="la la-angle-right"></i></a>
@@ -575,6 +575,9 @@
     </div><!-- end mobile-search-form -->
     <div class="body-overlay"></div>
 </header>
+<section>
+    {{$slot}}
+</section>
 <section class="footer-area pt-100px">
     <div class="container">
         <div class="row">
