@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- {{ asset('assets/css/app.css') }} -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/line-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-select.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fancybox.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/tooltipster.bundle.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
 <header class="header-menu-area bg-white">
     <div class="header-top pr-150px pl-150px border-bottom border-bottom-gray py-1">
         <div class="container-fluid">
@@ -558,10 +575,6 @@
     </div><!-- end mobile-search-form -->
     <div class="body-overlay"></div>
 </header>
-<div>
-    <div class="container">
-        {{$slot}}
-    </div>
 <section class="footer-area pt-100px">
     <div class="container">
         <div class="row">
@@ -666,4 +679,5 @@
         </div><!-- end container -->
     </div><!-- end copyright-content -->
 </section>
-</div>
+</body>
+</html>

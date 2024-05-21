@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Authentification;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/',function(){
-    return view('home');
+    return view('login');
 });
 Route::post('/inscription',[user::class,'inscription']);
 Route::post('/connection',[user::class,'connection']);
 
+Route::controller(Authentification::class)->group(function () {
+
+    Route::middleware('guest')->group(function () {
+
+        Route::get('/login', 'afficher_login')->name('afficher_login');
+       
+    });
+
+    Route::middleware('auth')->group(function () {
+
+        Route::get('/logout', 'logout')->name('logout');
+    });
+});

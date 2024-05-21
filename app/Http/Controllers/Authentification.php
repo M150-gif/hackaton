@@ -3,30 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Models\User;
-class Userr extends Controller
+
+class Authentification extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function inscription(Request $request)
+    public function afficher_login()
     {
-        $validate=[
-            "email"=>"required|",
-            "passowrd"=>"required|"
-        ];
+        return view('/login');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function connection(Request $request)
+    public function create()
     {
-         user::create([
-            'email' => $request['email'],
-            'password' => Hash::make($request['password']),
-        ]);
-        
+        //
     }
 
     /**
@@ -40,7 +33,7 @@ class Userr extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(formation $formation)
+    public function show(string $id)
     {
         //
     }
@@ -48,7 +41,7 @@ class Userr extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(formation $formation)
+    public function edit(string $id)
     {
         //
     }
@@ -56,7 +49,7 @@ class Userr extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, formation $formation)
+    public function update(Request $request, string $id)
     {
         //
     }
@@ -64,9 +57,8 @@ class Userr extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(formation $formation)
+    public function destroy(string $id)
     {
         //
     }
 }
-
