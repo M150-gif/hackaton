@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/',function(){
+    return view('home');
 });
+Route::post('/inscription',[user::class,'inscription']);
+Route::post('/connection',[user::class,'connection']);
+
